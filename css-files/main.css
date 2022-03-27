@@ -1,0 +1,246 @@
+body {
+  background: #e9f0e8;
+  padding: 0%;
+  margin: 0%;
+}
+
+ul {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  font-family: 'Lobster', cursive;
+  color: #2f3e46;
+  text-decoration: none;
+  font-size: 2rem;
+  text-align: center;
+  font-style: italic;
+  margin-left: 0.5em;
+}
+
+.logo span {
+  color: #84a98c;
+}
+
+.welcome-sect {
+  font-family: 'Alegreya', serif;
+  margin-left: 1.5em;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  font-size: 1rem;
+  font-weight: bold;
+  -webkit-animation: welcomeLoad 2s forwards;
+          animation: welcomeLoad 2s forwards;
+}
+
+nav {
+  font-family: 'Alegreya', serif;
+  font-weight: bold;
+  font-style: italic;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: #52796f;
+  height: 100vh;
+  width: 50%;
+  z-index: 999;
+  text-transform: uppercase;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 8em;
+}
+
+nav ul a {
+  color: black;
+  padding: 0.75em 2em;
+  display: block;
+}
+
+nav ul a:hover {
+  background: grey;
+}
+
+nav .close {
+  float: right;
+  margin: 2em;
+  width: 2.5em;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header svg {
+  width: 2em;
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+
+.open-nav {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.eikones img {
+  width: 55vw;
+  height: 25vh;
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+}
+
+.eikona-right {
+  opacity: 0%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+}
+
+.eikona-right .content {
+  font-family: 'Alegreya', serif;
+  font-weight: bold;
+  text-align: left;
+  width: 10em;
+  margin-left: 0.5em;
+}
+
+.eikona-left {
+  opacity: 0%;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "left right";
+}
+
+.eikona-left .content {
+  font-family: 'Alegreya', serif;
+  font-weight: bold;
+  text-align: left;
+  width: 10em;
+  -ms-grid-column-align: left;
+      justify-self: left;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: right;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+.prwto {
+  -webkit-animation: prwtoAnim 1s forwards;
+          animation: prwtoAnim 1s forwards;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.deutero {
+  -webkit-animation: deuteroAnim 1s forwards;
+          animation: deuteroAnim 1s forwards;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.trito {
+  -webkit-animation: tritoAnim 1s forwards;
+          animation: tritoAnim 1s forwards;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+@-webkit-keyframes prwtoAnim {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes prwtoAnim {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes deuteroAnim {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes deuteroAnim {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes tritoAnim {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes tritoAnim {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes welcomeLoad {
+  from {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+            clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+            clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+  }
+}
+
+@keyframes welcomeLoad {
+  from {
+    -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+            clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+            clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+  }
+}
+/*# sourceMappingURL=main.css.map */
